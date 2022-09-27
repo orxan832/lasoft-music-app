@@ -38,7 +38,6 @@ const Index = ({ selectedMusicId, selectedMusicIdHandler }) => {
             const inputMaxValue = calculateInputMaxValue(duration);
             if (currentTime !== 'NaN:NaN' && duration !== 'NaN:NaN') {
                 setTime(prev => {
-                    console.log(prev.inputRangeValue);
                     return { currentTime, duration, inputRangeValue: prev.inputRangeValue + 0.25, inputMaxValue }
                 });
             }
