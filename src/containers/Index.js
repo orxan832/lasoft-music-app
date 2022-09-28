@@ -99,7 +99,7 @@ const Index = ({ selectedMusicId, selectedMusicIdHandler }) => {
                 <input type='range' className='w-full outline-none' min='0' max={time.inputMaxValue} step='0.25' value={time.inputRangeValue} onChange={changeAudioTrack} />
                 <p>{time.duration}</p>
             </div>
-            <div className='flex justify-between mt-12 w-1/2 text-slate-800'>
+            <div className='flex justify-between mt-12 w-1/4 text-slate-800'>
                 <button onClick={changeToPreviousMusic}>
                     <ImPrevious2 size='1.5rem' />
                 </button>
